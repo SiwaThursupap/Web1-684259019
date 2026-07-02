@@ -9,11 +9,15 @@
 
     <!-- Internal CSS -->
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Tahoma, sans-serif;
             background-color: rgb(230, 177, 108);
             margin: 45px;
             scroll-behavior: smooth;
+            line-height: 1.5;
         }
         h1 {
             color: crimson;
@@ -26,6 +30,17 @@
             background-color: darkseagreen;
             padding: 20px;
             border-left: 2px solid rgb(0, 0, 0);
+            white-space: pre-wrap; /*ปรับให้ไม่ล้นกรอบตอนย่อขยาย*/
+        }
+        a{
+            text-decoration: none;              /*ปิดเส้นขีดใต้ตอนกดเข้าลิงค์*/
+        }
+        a:hover{    /*เมื่อวางเมาส์บนลิงค์*/
+            color: red;
+            /*text-decoration: underline;*/
+        }
+        .text-center{ /*ใช้ . ข้างหน้าในการทำคลาส*/
+            text-align: center;
         }
     </style>
 </head>
@@ -92,8 +107,9 @@
 
     <!-- Content Headding -->
     <h2 id="Heading">Heading</h2>
-    <p>workshop</p>
-    <p>HTML headings are defined with the &lt; h1 &gt; to &lt; tags... &gt;
+    <p>HTML headings are defined with the &lt; h1 &gt; to &lt; tags... &gt;</p>
+    <a href="W03-01-heading.html">workshop 1 |</a>
+    <a href="W03-02-heading.html">workshop 2 |</a>
     <pre>
 - &lt;h1&gt;: Heading 1
 - &lt;h2&gt;: Heading 2
@@ -108,7 +124,7 @@
     <h2 id="Paragraph">Paragraph</h2>
     <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
     <pre>
- - &lt;p&gt;: Paragraph</pre>
+- &lt;p&gt;: Paragraph</pre>
     <a href="#top">Back To Top</a>
     <hr>
 
@@ -336,14 +352,18 @@ radio, checkbox, date, file
     <a href="#top">Back To Top</a>
     <hr>
 
-
     <!-- Content My Worshop -->
     <h2 id="Workshop">My Workshop</h2>
 <pre>
-<li>workshop 01 : rabit</a></li>
+<li>workshop 01 : rabit</p></li>
 <li>workshop 02 : Login</a></li></pre>
     <a href="#top">Back To Top</a>
     <hr>
-    <p><a href="https://www.w3schools.com/css/default.asp">Learn more about HTML</p>
+
+    <div class="text-center">
+        <a href="https://www.w3schools.com/html/default.asp">Learn more about HTML </a>
+        <p>&copy; 2026 Created By: 684259019 : MrJinxed</p>
+    </div>
+
 </body>
 </html>
