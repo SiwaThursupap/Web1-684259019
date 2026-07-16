@@ -1,68 +1,209 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        background-color: #ffffff;
-        line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #ebf8ff;
+
+  line-height: 1.6;
 }
 
 footer,
-.hero,
-.card,
-.tip-box{
-        border: 1px solid red;
-        background-color: #fff;
-        margin: 20px;
-        padding: 20px;
+/* .hero, */
+/* .card, */
+.tip-box {
+  border: 1px solid #ff0000;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
 }
 
-header{
-    background: linear-gradient(to right, rgb(24, 24, 216), rgb(66, 162, 226));
-    padding: 20px;
-    color: white;
-    box-shadow: 0px 4px 8px darkblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ================================
+              Header
+=================================== */
+header {
+  background: linear-gradient(to right, #0036aa, #325bfc);
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.brand{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.brand-icon{
-    font-size: 50px;
+
+.brand-icon {
+  font-size: 50px;
 }
 .brand-text p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-nav a:hover{
-    color: white;
-    text-decoration: underline;
+/* navigation */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: aqua;
-}
-    
-.card-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: grey;
+nav a:hover {
+  text-decoration: underline;
 }
 
+/* hero section */
+.hero {
+  display: flex;
+  gap: 10px;
+
+  padding: 40px;
+}
+
+.hero-icon {
+  background-color: #325bfc;
+  color: #fff;
+  border-radius: 15px;
+
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text {
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: #1a2d78;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #474748;
+}
+
+/* Main content */
+
+.container {
+  /*max-width: 1200px;*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  /*background-color: #b5fd76;*/
+}
+
+.card-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  /* background-color: #fffb2c; */
+}
+
+.card {
+  background-color: #fff;
+
+  border-radius: 16px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+  border: 1px solid rgb(127, 134, 205);
+  overflow: hidden;
+}
+.card-header{
+  background-color: #d1ecf3;
+  color: #325bfc;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 1px solid rgb(127, 134, 205);
+}
+.card-header-icon{
+  background-color: #0036aa;
+  color: white;
+  border-radius: 50%;
+
+  /*padding: 10px;*/
+
+  width: 38px;
+  height: 38px;
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-body{
+  padding: 20px;
+}
+
+.format-row{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+
+  gap: 20px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid  #6284ce;
+  padding: 6px 0;
+}
+
+.label {
+  /*padding: 8px 50px;*/
+  
+  border-radius: 8px;
+
+  color: #ebf8ff;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.b-label {background-color: #325bfc;}
+
+.strong-label {background-color: #03d826;}
+
+.i-label {background-color: #d8d403;}
+
+.em-label {background-color: #d85803;}
+
+.u-label {background-color: #d80303;}
+
+.mark-label {background-color: #03d8cd;}
+
+.small-label {background-color: #9c03d8;}
+
+.del-label {background-color: #d8037f;}
+
+.sup-label {background-color: #03d886;}
+
+.sub-label {background-color: #d89f03;}
+
+/* Card 2 */
+
+.pre-box{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.html-tag{
+ color: red;
+}
+
+.line-no{
+  color: rgb(128, 128, 128);
+  display: inline-block;
+  width: 20px;
+}
