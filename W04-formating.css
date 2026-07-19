@@ -278,6 +278,7 @@ nav a:hover {
 .tip-box-icon{
   background-color: rgb(255, 168, 39);
   border-radius: 50%;
+  font-size: 20px;
 
   width: 45px;
   height: 45px;
