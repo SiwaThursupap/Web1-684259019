@@ -11,10 +11,10 @@ body {
   line-height: 1.6;
 }
 
-footer,
+footer
 /* .hero, */
 /* .card, */
-.tip-box {
+/*.tip-box*/ {
   border: 1px solid #ff0000;
   background-color: #fff;
   margin: 20px;
@@ -25,7 +25,7 @@ footer,
               Header
 =================================== */
 header {
-  background: linear-gradient(to right, #0036aa, #325bfc);
+  background: linear-gradient(to right, #0036aa, #5476ff);
   padding: 20px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -42,6 +42,9 @@ header {
 
 .brand-icon {
   font-size: 50px;
+}
+.brand-text{
+  color: white;
 }
 .brand-text p {
   font-size: 14px;
@@ -144,6 +147,19 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+.purple-bg{
+  background-color: rgb(175, 15, 175);
+}
+.purple-text{
+  color: rgb(175, 15, 175);
+}
+.orenge-bg{
+  background-color: rgb(245, 182, 65);
+}
+.orenge-text{
+  color: rgb(150, 98, 2);
+}
+
 .card-body{
   padding: 20px;
 }
@@ -206,4 +222,77 @@ nav a:hover {
   color: rgb(128, 128, 128);
   display: inline-block;
   width: 20px;
+}
+
+/* Crad 3 */
+.activity-list{
+  list-style: none;
+}
+.activity-list li{
+  margin-bottom: 20px;
+}
+
+.check{
+  /*background-color: rgb(201, 64, 48);*/
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  
+  /*padding: 10px;*/
+  border-radius: 50%;
+
+  display: inline-flex;
+  height: 38px;
+  width: 38px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.check-blue{background-color: blue;}
+.check-red{background-color: red;}
+.check-green{background-color: green;}
+.check-orenge{background-color: darkorange;}
+.check-darkmagenta{background-color: darkmagenta;}
+
+.flie{
+  background-color: rgb(155, 215, 255); 
+  color: darkblue;
+
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* Tip-box */
+.tip-box{
+  background-color: rgb(243, 224, 188);
+  border: 1px solid rgb(179, 116, 0);
+  border-radius: 20px;
+  
+  padding: 20px;
+  margin: 20px;
+}
+.tip-box-header{
+  display: inline-flex;
+}
+.tip-box-icon{
+  background-color: rgb(255, 168, 39);
+  border-radius: 50%;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tip-box h2{
+  margin-left: 15px;
+}
+.tip-box p{
+  padding-left: 60px;
+}
+.tip-box-text{
+  color: blue;
+  font-weight: bold;
 }
