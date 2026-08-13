@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test01-51</title>
+</head>
+
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: antiquewhite;
+        line-height: 1.6;
+    }
+
+    header{
+        background-color: blue;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    .nav{
+        background: darkblue;
+        text-align: center;
+        padding: 20px;
+    }
+    .nav a{
+        text-decoration: none;
+        margin-left: 45px;
+        color: white;
+        
+        transition: 0.2s;
+    }
+    .nav a:hover{
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+    }
+
+    .container {
+    padding: 50px 275px;
+}
+
+    .card1{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(66, 65, 65, 0.322);
+        margin-bottom: 50px;
+        padding: 15px;
+        /*border-top: 3px solid blue;*/
+        overflow: hidden;
+    }
+    .layout-card1{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .layout-card1 img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        clip-path: circle(35%);
+    }
+    .border-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name h2{
+        border-left: 5px black;
+    }
+    .card1 hr{
+        border: 1px solid black;
+    }
+    .name-and-info h2{
+        border-left: 5px solid blue;
+        padding: 10px;
+        color: rgb(57, 158, 216);
+    }
+    .card-information{
+        background-color: rgba(246, 255, 127, 0.664);
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid rgb(246, 215, 42);
+    }
+
+    .text-orange{
+        color: orange;
+        font-weight: bold;
+    }
+
+    .card2{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(66, 65, 65, 0.322);
+        margin-bottom: 50px;
+        padding: 15px;
+        /*border-top: 3px solid blue;*/
+        overflow: hidden;
+    }
+    .card2 hr{
+        border: 1px solid black;
+        margin-bottom: 20px;
+    }
+    .card2-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card2-info{
+        background-color: rgba(127, 255, 212, 0.5);
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .card2-info-side{
+        background-color: rgba(255, 166, 0, 0.425);
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        margin-left: 20px;
+        border-left: 5px solid orange;
+        border-right: 5px solid orange;
+    }
+    .card2-info-text{
+        color: rgb(41, 146, 111);
+        font-weight: bold;
+    }
+    .card2-info-text2{
+        color: rgb(145, 94, 0);
+        font-weight: bold;
+    }
+
+    .footer{
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: rgb(255, 159, 16);
+    }
+</style>
+
+
+<body>
+
+    <header>
+        <h1 id="top">นายสมชาย ใจดี</h1>
+        <p>นักศึกษาสาขาวิชาวิศวกรรมซอฟต์แวร์ วิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏนครปฐม</p>
+    </header>
+    <div class="nav">
+        <a href="">เกี่ยวกับฉัน</a>
+        <a href="">ข้อมูลส่วนตัว</a>
+        <a href="">ความสามารถ</a>
+        <a href="">ผลงาน</a>
+    </div>
+
+    
+    <div class="container">
+        <div class="card1">
+            <h2>เกี่ยวกับฉัน</h2>
+            <hr>
+            <div class="layout-card1">
+                    <img src="/images/work.png" alt="ภาพแสดงตัวอย่าง">
+                <div class="name-and-info">
+                    <h2>นายสมชาย ใจดี</h2>
+                    <p><span class="text-orange">ชื่อเล่น :</span> ชาย</p>
+                    <p><span class="text-orange">รหัสนักศึกษา :</span> 684259001</p>
+                    <p><span class="text-orange">สาขาวิชา :</span> วิศวกรรมซอฟต์แวร์</p>
+                    <div class="card-information">
+                        <p>สวัสดีครับ ผมเป็นนักศึกษาที่สนใจด้านการออกแบบและพัฒนาเว็บไซต์ เป้าหมายของผมคือการเป็นนักพัฒนาเว็บไซต์ที่สามารถสร้างผลงาน ที่สวยงาม ใช้งานง่าย และเป็นประโยชน์ต่อผู้ใช้งาน</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card2">
+            <h2>ข้อมูลส่วนตัว</h2>
+            <hr>
+            <div class="card2-layout">
+                <div class="card2-info">
+                    <p><span class="card2-info-text">วันเกิด</span></p>
+                    <p>15 มกราคม 2548</p>
+                </div>
+                <div class="card2-info">
+                    <p><span class="card2-info-text">อายุ</span></p>
+                    <p>21 ปี</p>
+                </div>
+                <div class="card2-info-side">
+                    <p><span class="card2-info-text2">อีเมล</span></p>
+                    <p><span class="card2-info-text2">somchai@example.com</span></p>
+                </div>
+                <div class="card2-info-side">
+                    <p><span class="card2-info-text2">Github</span></p>
+                    <p><span class="card2-info-text2">github.com/somchai</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="footer">
+        <p>© 2026 Somchai Profile Website. All rights reserved</p>
+        <p><a href="#top">กลับไปด้านบน</a></p>
+    </div>
+</body>
+</html>
