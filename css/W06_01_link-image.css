@@ -6,7 +6,7 @@
 
 body {
   font-family: "Prompt", Geneva, Tahoma, sans-serif;
-  background-color: rgb(184, 250, 255);
+  background-color: rgb(215, 248, 250);
 
   color: rgb(46, 45, 45);
   line-height: 1.6;
@@ -124,12 +124,12 @@ body {
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
 
-  padding: 26px 36px;
-
+  
   background: linear-gradient(90deg, rgb(114, 124, 255), rgb(18, 21, 153));
-
+  
+  padding: 26px 36px;
   border-radius: 15px;
-  box-shadow: 0 1px 8px rgb(21, 7, 141);
+  box-shadow: 0 5px 8px rgb(21, 7, 141);
 
   align-items: center;
 }
@@ -161,10 +161,114 @@ body {
     */
 }
 
+/* Link Example */
 .card {
-  border: 1px solid rgb(204, 0, 255);
-  padding: 15px;
-  margin: 15px;
+  border: 1px solid rgb(111, 157, 255);
+  background-color: white;
+  border-radius: 15px;
+  
+  padding: 26px 36px;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgb(21, 7, 141);
+  
+  margin-top: 20px;
+}
+
+
+.card-header-title{
+  /* background-color: blueviolet; */
+}
+.card-header-title h2{
+  color: rgb(0, 0, 68);
+}
+.card-body-grid{
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 20px;
+}
+
+/* กล่อง Link ด้านซ้าย */
+.result-panel, .code-panel{
+  /* background-color: firebrick; */
+  border: 1px solid rgb(111, 157, 255);
+  border-radius: 10px;
+  
+  overflow: hidden;
+}
+.result-panel-header, .code-panel-header{
+  background-color: rgb(154, 219, 236);
+  color: rgb(0, 0, 68);
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.result-panel-body{
+  padding: 5px 20px 15px 20px;
+  line-height: 2;
+}
+.result-panel-body a{
+  display: block;
+  color: rgb(48, 30, 211);
+}
+.result-panel-body a:hover{
+  color: red;
+}
+
+.mail-box{
+  background-color: blue;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.back-btn{
+  border: 2px solid rgb(48, 30, 211);
+  border-radius: 10px ;
+  
+  display: inline-block !important;
+  
+  padding: 0px 20px;
+  
+  text-decoration: none;
+}
+
+
+
+/* กล่อง Link ด้านขวา */
+.code-panel{
+  background-color: black;
+}
+.code-panel-body{
+  color: white;
+}
+
+.code-list {
+  color: white;
+  padding: 16px 40px;
+}
+.code-list li {
+  padding: 0px 20px;
+}
+/* โค๊ด Tag */
+.tag{
+  color: red;
+}
+.attr{
+  color: rgb(179, 250, 73);
+}
+.value{
+  color: green;
+}
+
+/* Image Example */
+.result-panel-body-3g{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  align-items: baseline;
+  text-align: center;
+  font-size: 14px;
+
+  padding: 0px 14px;
 }
 
 /* Right SideBar */

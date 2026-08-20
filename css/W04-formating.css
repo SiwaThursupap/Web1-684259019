@@ -333,7 +333,8 @@ nav a:hover {
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
   gap: 20px;
 
-  background-color: #1fcc2dd3;
+  background-color: #0036aa;
+  color: white;
   padding: 25px 29px;
 }
 
