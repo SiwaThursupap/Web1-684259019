@@ -274,12 +274,56 @@ body {
 /* Right SideBar */
 
 .right-sidebar {
-  border: 1px solid rgb(4, 0, 255);
+  /* border: 1px solid rgb(4, 0, 255); */
   padding: 15px;
-  margin: 15px;
+  margin: 0px 0px 0px 5px;
+}
+.right-sidebar-icon{
+  font-size: 50px;
 }
 
 .side-card {
+  border: 1px solid rgb(111, 157, 255);
+  background-color: white;
+  border-radius: 15px;
+  
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 8px rgb(21, 7, 141);
+  
+  margin-top: 0px;
+}
+
+.side-card ul{
+  list-style: none;
+}
+.side-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 68);
+  margin-bottom: 10px;
+}
+.side-card li{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.number{
+  background-color: blue;
+  border-radius: 50%;
+
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .submit-card {
