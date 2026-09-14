@@ -32,14 +32,22 @@ body{
     --muted-text-color : rgb(158, 158, 158) ;
     --nav-text-color: grey;
     --light-text-color: white;
+    --text-blue : blue;
+    --text-purple: purple;
+    --text-green: green;
+    --text-orange: rgb(194, 126, 0);
 
     /* สีพื้น */
     --btn-bg-color : rgb(58, 23, 182);
     --footer-bg-color : black ;
+    --info-blue-color: rgba(137, 192, 255, 0.672);
+    --info-purple-color: rgba(255, 104, 255, 0.556);
+    --info-green-color: rgba(77, 203, 77, 0.661);
+    --info-orange-color: rgba(255, 194, 80, 0.619);
 
     /* เงา */
     --header-shadow: 0 5px 8px #ccf5ff;
-    --card-shadow: 0 3px 10px #6d8fff9c;
+    --card-shadow: 0 3px 10px #65baffc2;
 
     /* สีขอบ */
     --border-color: #5b5bf1;
@@ -118,6 +126,7 @@ nav a.active{
 /*================================== 
                 Main
 ====================================*/
+/* Pet section */
 .page-title {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -162,6 +171,63 @@ nav a.active{
     color: var(--muted-text-color);
 }
 
+/* Info section */
+.info-section{
+    border: var(--border-color);
+    background-color: white;
+
+    border-radius: 0.8rem;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    box-shadow: var(--card-shadow);
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.info-card{
+    /* background-color: var(--border-color); */
+    border-radius: 0.8rem;
+
+    padding: 1rem;
+    margin: 0.4rem;
+}
+
+.info-title{
+    text-align: center;
+}
+
+.info-blue-card{
+    background-color: var(--info-blue-color);
+}
+.info-blue h3{
+    color: var(--text-blue);
+}
+
+.info-purple-card{
+    background-color: var(--info-purple-color);
+}
+.info-purple h3{
+    color: var(--text-purple);
+}
+
+.info-green-card{
+    background-color: var(--info-green-color);
+}
+.info-green h3{
+    color: var(--text-green);
+}
+
+.info-orange-card{
+    background-color: var(--info-orange-color);
+}
+.info-orange h3{
+    color: var(--text-orange);
+}
 /*================================== 
                 Footer
 ====================================*/
