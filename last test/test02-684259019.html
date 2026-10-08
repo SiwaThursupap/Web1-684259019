@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test02</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+
+<body>
+    <header class="side-header">
+        <div class="brand">
+            <div class="brand-text">
+                <h2>SE019: Campus Activity</h2>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#activity">กิจกรรม</a></li>
+                <li><a href="#end">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- <article class="layer-grid"> -->
+            <div class="left-side">
+                <div class="card-left">
+                    <h2>ค้นพบกิจกรรมใหม่ในรั้วมหาวิทยาลัย</h2>
+                    <p>เติมประสบการณ์นอกห้องเรียนผ่านกิจกรรมสร้างสรรค์ หร้อมพบเพื่อนใหม่และพัฒนาทักษะที่คุณสนใจ</p>
+                    <div class="activity-view">
+                        <a href="#activity">ดูกิจกรรมทั้งหมด</a>
+                    </div>
+                </div>
+            </div>
+            <aside class="right-side">
+                <section class="containt">
+                    <div class="regit-activity">
+                        <h2>แจ้งความสนใจเรียน</h2>
+                        <div class="form-line">
+                            <form>
+                                <label for="name">ชื่อ-นามสกุล</label>
+                                <br>
+                                <input type="text" id="name" name="name">
+                                <br>
+                                <label for="email">อีเมล</label><br>
+                                <input type="email" id="email" name="email">
+                            </form>
+                        </div>
+
+                        <div class="activiry-fav">
+                            <h3>กิจกรรมที่สนใจ</h3>
+                            <div class="radio">
+                                <form>
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">ART</label><br>
+                                    <input type="radio" id="css" name="fav_language" value="CSS">
+                                    <label for="css">SPORT</label><br>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                    <label for="javascript">GREEN</label>
+                                </form>
+                            </div>
+                        </div>
+
+                        <input type="submit" id="submit-btn" name="send" value="ส่งข้อมูล">
+                    </div>
+                </section>
+
+                <div class="activity">
+                    <h2 id="activity">กิจกรรมที่แนะนำ</h2>
+                    <div class="activity-layer">
+                        <div class="activity-list">
+                            <div class="card">
+                                <div class="pic-orange">
+                                    <p>&lt;ART></p>
+                                </div>
+                                <div class="card-body">
+                                    <p>Creative Art Day</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="pic-blue">
+                                    <p>&lt;SPORT></p>
+                                </div>
+                                <div class="card-body">
+                                    <p>Campus Sport Day</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="pic-purple">
+                                    <p>GREEN</p>
+                                </div>
+                                <div class="card-body">
+                                    <p>Green Campus Day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="left-side">
+                <p id="end">© 2026 SE019: Campus Activity</p>
+            </div>
+            <div class="right-side">
+                ศิวะ ทั้วสุภาพ
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

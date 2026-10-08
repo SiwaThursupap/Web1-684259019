@@ -1,0 +1,206 @@
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        /* สีหลัก */
+        --primary-color: #ffffff;
+        /* พื้นหลัง */
+        --bg-color: rgb(231, 226, 226);
+        --card-color: rgb(96, 178, 255);
+        --btn-color: blue;
+        /* ขอบ */
+        --border-color: rgb(150, 150, 150);
+        /* ฟอนต์ */
+        --text-font: #000000;
+        --white-text: #ffff;
+        --mute-text: rgb(180, 180, 180);
+        /* pic */
+        --bg-orange: rgb(255, 195, 83);
+        --text-orange: rgb(177, 115, 0);
+        --bg-blue: rgb(94, 94, 255);
+        --text-blue: blue;
+        --bg-purple: rgb(204, 81, 204);
+        --text-purple: purple;
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.7;
+
+        background-color: rgb(247, 247, 247);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+
+        margin: 1rem auto;
+
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 18px;
+
+        /* border: 1px solid red; */
+    }
+
+    .side-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: var(--primary-color);
+        border-bottom: 2px solid var(--border-color);
+
+        padding: 10px 22px;
+
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .nav-list {
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: var(--text-font);
+    }
+
+    .nav-list a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    /* Main */
+    .layer-grid {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 18px;
+
+        padding: 20px 22px;
+    }
+
+    .card-left {
+        background-color: var(--card-color);
+
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+
+        padding: 1rem 1rem;
+    }
+
+    .activity-view {
+
+        background-color: var(--btn-color);
+        /* border: 1px solid red; */
+        border-radius: 12px;
+
+        margin-top: 22px;
+        padding: 8px;
+
+        text-align: center;
+    }
+
+    .activity-view a {
+        color: var(--white-text);
+        text-decoration: none;
+    }
+
+    .regit-activity {
+        background-color: var(--card-color);
+
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+
+        padding: 1rem 1rem;
+    }
+
+    .radio {
+        display: inline;
+    }
+
+
+    .activity-layer {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        gap: 1.25rem;
+    }
+
+    .card {
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+
+        overflow: hidden;
+
+        margin: 12px;
+    }
+
+    .pic-orange {
+        text-align: center;
+        background-color: var(--bg-orange);
+        color: var(--text-orange);
+        padding: 70px;
+    }
+
+    .pic-purple {
+        text-align: center;
+        background-color: var(--bg-purple);
+        color: var(--text-purple);
+        padding: 70px;
+    }
+
+    .pic-blue {
+        text-align: center;
+        background-color: var(--bg-blue);
+        color: var(--text-blue);
+        padding: 70px;
+    }
+
+    .card-body {
+        padding: 8px;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        background-color: black;
+        color: var(--white-text);
+
+        padding: 20px;
+    }
+
+    @media(max-width:900) {
+        .activity-layer {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width:600) {
+        .activity-layer {
+            grid-template-columns: repeat(1fr);
+        }
+
+        .side-header {
+            flex-direction: column;
+        }
+
+        .footer {
+            flex-direction: column;
+        }
+    }
